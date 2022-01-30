@@ -2,7 +2,7 @@
  * uln2003a_28byj48.c
  *
  *  Created on: Jan 30, 2022
- *      Author: Fatih
+ *      Author: Fatih Alparslan
  */
 #include"uln2003a_28byj48.h"
 
