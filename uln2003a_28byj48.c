@@ -11,6 +11,12 @@ void half_step(uint8_t step_count){
 	if(step_count<9 && step_count>0){
 		switch(step_count){
 		case 1:
+			/*
+			IN1->1
+			IN2->0
+			IN3->0
+			IN4->0
+			*/
 			ULN_IN1_GPORT->BSRR|= ULN_IN1_GPIN;
 			ULN_IN2_GPORT->BRR |= ULN_IN2_GPIN;
 			ULN_IN3_GPORT->BRR |= ULN_IN3_GPIN;
@@ -19,6 +25,12 @@ void half_step(uint8_t step_count){
 			ULN_IN1_GPORT->BRR |= ULN_IN1_GPIN;
 			break;
 		case 2:
+			/*
+			IN1->1
+			IN2->1
+			IN3->0
+			IN4->0
+			*/
 			ULN_IN1_GPORT->BSRR|= ULN_IN1_GPIN;
 			ULN_IN2_GPORT->BSRR|= ULN_IN2_GPIN;
 			ULN_IN3_GPORT->BRR |= ULN_IN3_GPIN;
@@ -28,6 +40,12 @@ void half_step(uint8_t step_count){
 			ULN_IN2_GPORT->BRR |= ULN_IN2_GPIN;
 			break;
 		case 3:
+			/*
+			IN1->0
+			IN2->1
+			IN3->0
+			IN4->0
+			*/
 			ULN_IN1_GPORT->BRR |= ULN_IN1_GPIN;
 			ULN_IN2_GPORT->BSRR|= ULN_IN2_GPIN;
 			ULN_IN3_GPORT->BRR |= ULN_IN3_GPIN;
@@ -36,6 +54,12 @@ void half_step(uint8_t step_count){
 			ULN_IN2_GPORT->BRR |= ULN_IN2_GPIN;
 			break;
 		case 4:
+			/*
+			IN1->0
+			IN2->1
+			IN3->1
+			IN4->0
+			*/
 			ULN_IN1_GPORT->BRR |= ULN_IN1_GPIN;
 			ULN_IN2_GPORT->BSRR|= ULN_IN2_GPIN;
 			ULN_IN3_GPORT->BSRR|= ULN_IN3_GPIN;
@@ -45,6 +69,12 @@ void half_step(uint8_t step_count){
 			ULN_IN3_GPORT->BRR |= ULN_IN3_GPIN;
 			break;
 		case 5:
+			/*
+			IN1->0
+			IN2->0
+			IN3->1
+			IN4->0
+			*/
 			ULN_IN1_GPORT->BRR |= ULN_IN1_GPIN;
 			ULN_IN2_GPORT->BRR |= ULN_IN2_GPIN;
 			ULN_IN3_GPORT->BSRR|= ULN_IN3_GPIN;
@@ -53,6 +83,12 @@ void half_step(uint8_t step_count){
 			ULN_IN3_GPORT->BRR |= ULN_IN3_GPIN;
 			break;
 		case 6:
+			/*
+			IN1->0
+			IN2->0
+			IN3->1
+			IN4->1
+			*/
 			ULN_IN1_GPORT->BRR |= ULN_IN1_GPIN;
 			ULN_IN2_GPORT->BRR |= ULN_IN2_GPIN;
 			ULN_IN3_GPORT->BSRR|= ULN_IN3_GPIN;
@@ -63,6 +99,12 @@ void half_step(uint8_t step_count){
 			break;
 
 		case 7:
+			/*
+			IN1->0
+			IN2->0
+			IN3->0
+			IN4->1
+			*/
 			ULN_IN1_GPORT->BRR |= ULN_IN1_GPIN;
 			ULN_IN2_GPORT->BRR |= ULN_IN2_GPIN;
 			ULN_IN3_GPORT->BRR |= ULN_IN3_GPIN;
@@ -72,6 +114,12 @@ void half_step(uint8_t step_count){
 			break;
 
 		case 8:
+			/*
+			IN1->1
+			IN2->0
+			IN3->0
+			IN4->1
+			*/
 			ULN_IN1_GPORT->BSRR|= ULN_IN1_GPIN;
 			ULN_IN2_GPORT->BRR |= ULN_IN2_GPIN;
 			ULN_IN3_GPORT->BRR |= ULN_IN3_GPIN;
