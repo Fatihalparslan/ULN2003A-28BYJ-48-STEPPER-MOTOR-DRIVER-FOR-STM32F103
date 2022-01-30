@@ -2,7 +2,7 @@
  * uln2003a_28byj48.h
  *
  *  Created on: Jan 30, 2022
- *      Author: Fatih
+ *      Author: Fatih Alparslan
  */
 
 #ifndef INC_ULN2003A_28BYJ48_H_
